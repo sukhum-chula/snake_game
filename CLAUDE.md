@@ -27,3 +27,13 @@ Then visit `http://localhost:8000`. There is no build step, package manager, lin
   - High score persists via `localStorage` (`snakeHighScore`).
 
 When making changes, keep the no-dependency, single-file-per-concern structure — do not introduce a bundler or framework unless explicitly asked.
+
+## Visual identity (CI) checks
+
+Always check the CI (color and font) before considering visual work done. Match the existing palette and typography rather than introducing new ones ad hoc:
+
+- Background: `#1e1f26` (page), `#14151a` (canvas/status area)
+- Snake: `#7bd88f` (head), `#4fae67` (body)
+- Food: `#ff6b6b`
+- Text: `#f5f5f5` (primary), `#a9adc1` (HUD), `#6b6f85` (hint)
+- Font: `system-ui, -apple-system, Segoe UI, sans-serif`
